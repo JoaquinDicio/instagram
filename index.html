@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- My css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- My js -->
+    <script type='module' src="./js/swiper.js"></script>
+    <script type="module" src="./js/API_REQUEST.js"></script>
+    <script src="./js/main.js"></script>
+    <title>Instagram</title>
+</head>
+
+<body onload="init()">
+    <main class="post-container">
+        <div class="post">
+            <div class="header-post">
+                <div class="img"></div>
+                <div class="post-user-info">
+                    <h3 class="user-name">Erik Dunlop</h3>
+                    <p class="user-location">San Francisco, California</p>
+                </div>
+            </div>
+            <!-- Slider main container -->
+            <div class="post-content swiper">
+                <!-- wrapper -->
+                <div id='swiper-wraper' class="swiper-wrapper">
+                    <!-- Slides -->
+                </div>
+                <!-- pagination -->
+                <div class="swiper-pagination swiper-pagination-horizontal"></div>
+                <!-- buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="footer-post">
+                <div class="icons">
+                    <i class="like-btn fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-regular fa-paper-plane"></i>
+                </div>
+                <div class="footer-post-info">
+                    <p><b>Erik Dunlop</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.dignissimos aperiam
+                        voluptatum.</p>
+                    <div class="post-comments">
+                        <div class='comments' id="comments">
+                            <p><b>Comment</b> Lorem ipsum dolor sit, amet elit. Beatae, optio?</p>
+                        </div>
+                        <div class="post-comments-inputs">
+                            <input autocomplete="off" placeholder="add a comment" id="comment-input" type="text">
+                            <button type="button" class="comment-btn">Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/759a8eedd2.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

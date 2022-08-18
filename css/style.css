@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* normalize css */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background-color: #ebebeb;
+}
+/* POST LAYOUT */
+main.post-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div.post {
+    min-height: fit-content;
+    max-width: 527px;
+    background-color: #ffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+div.post .header-post {
+    height: 80px;
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+div.post .header-post .post-user-info {
+    margin-left: 15px;
+}
+
+div.post .header-post .post-user-info h3 {
+    font-size: 1.1em;
+}
+
+div.post .header-post .post-user-info p {
+    font-size: .8em;
+    margin-top: 5px;
+}
+
+/* POST HEADER */
+
+div.post .header-post .img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image:url(https://media.istockphoto.com/photos/millennial-male-team-leader-organize-virtual-workshop-with-employees-picture-id1300972574?b=1&k=20&m=1300972574&s=170667a&w=0&h=2nBGC7tr0kWIU8zRQ3dMg-C5JLo9H2sNUuDjQ5mlYfo=);
+    background-size: cover;
+    background-position: center;
+}
+
+/* POST CONTENT */
+div.post div.swiper {
+    max-height: 340px;
+}
+div.post div.swiper img {
+    width: 100%;
+}
+/* POST FOOTER */
+div.post .footer-post {
+    width: 100%;
+    padding: 15px 25px;
+    height: 100%;
+}
+div.post .footer-post .icons {
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+}
+div.post .footer-post .icons i {
+    font-size: 1.45em;
+    cursor: pointer;
+}
+div.post .footer-post .icons i.liked {
+    color: #ED4956;
+    animation: liked .25s ease-out;
+}
+/* like animation */
+@keyframes liked {
+    100% {
+        transform: scale(110%);
+    }
+}
+.footer-post .footer-post-info {
+    margin: 25px 2px;
+}
+.footer-post .footer-post-info p {
+    font-size: .9em;
+}
+/* comments section */
+.footer-post-info .post-comments {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0;
+    min-height: 160px;
+    max-height: 200px;
+}
+.footer-post-info .post-comments .comments {
+    margin-bottom: 10px;
+}
+.footer-post-info .post-comments .comments p {
+    margin-bottom: 5px;
+}
+.footer-post-info .post-comments-inputs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px auto;
+}
+.footer-post-info .post-comments-inputs input,
+.footer-post-info .post-comments-inputs button {
+    background-color: #ebebeb;
+    padding: 12px;
+    border: none;
+}
+.footer-post-info .post-comments-inputs input {
+    width: 80%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.footer-post-info .post-comments-inputs input:focus {
+    outline: none;
+}
+.footer-post-info .post-comments-inputs button {
+    width: 20%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: #3D8AFF;
+    font-weight: 700;
+    font-size: .9em;
+    cursor: pointer;
+}
